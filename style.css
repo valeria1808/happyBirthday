@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hachi Maru Pop", cursive;
+}
+
+h1{
+    font-size: 18px;
+    margin: 5px;
+}
+p{
+    font-size: 16px;
+    margin: 10px;
+}
+
+.container{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.blocks{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #D71868;
+    padding: 20px;
+    border-radius: 10px;
+}
+.blocks>div{
+    height: 60px;
+    width: 60px;
+    background-color: purple;
+    color: white;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted blue;
+    margin: 5px;
+    border-radius: 5px;
+}
+.blocks>div:hover{
+    background-color: rgb(174, 10, 130);
+}
+
+@media screen and (max-width: 500px) {
+    body{
+          background-image: url('шары.webp');
+    /*background-size: cover;*/
+    background-repeat: no-repeat;  
+    }
+  }
